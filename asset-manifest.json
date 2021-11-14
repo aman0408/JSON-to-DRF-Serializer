@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/JSON-to-DRF-Serializer/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/JSON-to-DRF-Serializer/static/js/main.e2858989.chunk.js",
-    "main.js.map": "/JSON-to-DRF-Serializer/static/js/main.e2858989.chunk.js.map",
-    "runtime-main.js": "/JSON-to-DRF-Serializer/static/js/runtime-main.a605b7cc.js",
-    "runtime-main.js.map": "/JSON-to-DRF-Serializer/static/js/runtime-main.a605b7cc.js.map",
-    "static/js/2.c69774a0.chunk.js": "/JSON-to-DRF-Serializer/static/js/2.c69774a0.chunk.js",
-    "static/js/2.c69774a0.chunk.js.map": "/JSON-to-DRF-Serializer/static/js/2.c69774a0.chunk.js.map",
-    "static/js/3.0f4f6a57.chunk.js": "/JSON-to-DRF-Serializer/static/js/3.0f4f6a57.chunk.js",
-    "static/js/3.0f4f6a57.chunk.js.map": "/JSON-to-DRF-Serializer/static/js/3.0f4f6a57.chunk.js.map",
+    "main.css": "/JSON-to-DRF-Serializer/static/css/main.c5273bd7.chunk.css",
+    "main.js": "/JSON-to-DRF-Serializer/static/js/main.158b4f13.chunk.js",
+    "main.js.map": "/JSON-to-DRF-Serializer/static/js/main.158b4f13.chunk.js.map",
+    "runtime-main.js": "/JSON-to-DRF-Serializer/static/js/runtime-main.bab6ff7e.js",
+    "runtime-main.js.map": "/JSON-to-DRF-Serializer/static/js/runtime-main.bab6ff7e.js.map",
+    "static/js/2.bbe55ae3.chunk.js": "/JSON-to-DRF-Serializer/static/js/2.bbe55ae3.chunk.js",
+    "static/js/2.bbe55ae3.chunk.js.map": "/JSON-to-DRF-Serializer/static/js/2.bbe55ae3.chunk.js.map",
+    "static/js/3.7d90653c.chunk.js": "/JSON-to-DRF-Serializer/static/js/3.7d90653c.chunk.js",
+    "static/js/3.7d90653c.chunk.js.map": "/JSON-to-DRF-Serializer/static/js/3.7d90653c.chunk.js.map",
     "index.html": "/JSON-to-DRF-Serializer/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/JSON-to-DRF-Serializer/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.c69774a0.chunk.js.LICENSE.txt": "/JSON-to-DRF-Serializer/static/js/2.c69774a0.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/JSON-to-DRF-Serializer/static/media/logo.6ce24c58.svg"
+    "static/css/main.c5273bd7.chunk.css.map": "/JSON-to-DRF-Serializer/static/css/main.c5273bd7.chunk.css.map",
+    "static/js/2.bbe55ae3.chunk.js.LICENSE.txt": "/JSON-to-DRF-Serializer/static/js/2.bbe55ae3.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/JSON-to-DRF-Serializer/static/media/Rubik-Regular.a4bece5c.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.a605b7cc.js",
-    "static/js/2.c69774a0.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.e2858989.chunk.js"
+    "static/js/runtime-main.bab6ff7e.js",
+    "static/js/2.bbe55ae3.chunk.js",
+    "static/css/main.c5273bd7.chunk.css",
+    "static/js/main.158b4f13.chunk.js"
   ]
 }
