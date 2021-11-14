@@ -7,7 +7,6 @@ function createKeyToTypesObject(arr) {
 
             if (key in key_types) {
                 key_types[key].count += 1;
-
                 if (typeof (arr[i][key]) === key_types[key].type) {
                     if (arr[i][key] === null)
                         key_types[key].nullable = true;
