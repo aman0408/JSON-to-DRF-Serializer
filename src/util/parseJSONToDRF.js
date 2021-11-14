@@ -66,6 +66,8 @@ function formatDRFField(key, field_type, required, nullable, tab = true) {
             string += "(required=False, allow_null=True)\n";
         } else if (nullable && required) {
             string += "(allow_null=True)\n";
+        } else if (!nullable && !required) {
+            string += "(required=False)\n";
         } else {
             string += "()\n";
         }
@@ -81,7 +83,7 @@ function parseJSONToDRF(arr) {
 
     if (!isPossible)
         return response.data;
-    
+
     const key_types = response.data;
 
     let string = "class ExampleSerializer:\n";
@@ -100,25 +102,25 @@ function parseJSONToDRF(arr) {
                 field_type = " serializers.BooleanField"
             }
         }
-        if (key_types[key].type === typeof (1)) {
+        else if (key_types[key].type === typeof (1)) {
 
             field_type = " serializers.IntegerField"
         }
-        if (key_types[key].type === typeof (1.1)) {
+        else if (key_types[key].type === typeof (1.1)) {
 
             field_type = " serializers.FloatField"
         }
-        if (key_types[key].type === typeof ("abc")) {
+        else if (key_types[key].type === typeof ("abc")) {
 
             field_type = " serializers.CharField"
         }
-        if (key_types[key].type === typeof ({
+        else if (key_types[key].type === typeof ({
             a: 1
         })) {
 
             field_type = " serializers.JSONField"
         }
-        if (key_types[key].type === typeof ([12, 1])) {
+        else if (key_types[key].type === typeof ([12, 1])) {
 
             field_type = " serializers.ListField"
         }
