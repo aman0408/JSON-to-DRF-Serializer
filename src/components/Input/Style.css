@@ -1,0 +1,26 @@
+textarea {
+    font-size: 14px;
+    display: flex;
+    height: 30px;
+    width: 100%;
+    line-height: 20px;
+    border-radius: 5px;
+    padding: 5px 5px 5px 10px;
+    border: 1px solid var(--input-border-color);
+    font-family: 'Rubik';
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+textarea:focus, textarea:focus-visible {
+    border: 1px solid teal;
+    outline: none;
+}
+
+textarea.has-error {
+    border: 1px solid red;
+}
+
+.error {
+    color: red;
+}

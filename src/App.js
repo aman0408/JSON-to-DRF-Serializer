@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import DRFSide from './components/DRF/DRF';
+import JSONSide from './components/JSON/JSON';
 
 function App() {
+
+  const [DRFValue, setDRFValue] = useState("");
+
+  const onSerializeCallback = (val) => {
+    setDRFValue(val)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="row">
+        <div className="col col-half col-fs" style={{borderRight: "1px solid #5C5C5C"}}>
+          <JSONSide onSerializeCallback={onSerializeCallback}/>
+        </div>
+        <div className="col col-half col-fs">
+          <DRFSide value={DRFValue}/>
+        </div>
+      </div>
     </div>
   );
 }
