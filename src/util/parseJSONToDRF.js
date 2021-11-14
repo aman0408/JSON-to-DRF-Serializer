@@ -32,7 +32,7 @@ function createKeyToTypesObject(arr) {
 }
 
 function addRequiredKey(arr, key_types) {
-    count = arr.length;
+    let count = arr.length;
 
     for (const key in key_types) {
         if (key_types[key].count === count) {
@@ -77,22 +77,22 @@ function formatDRFField(key, field_type, required, nullable, tab = true) {
 }
 
 function parseJSONToDRF(arr) {
-    response = createKeyToTypesObject(arr);
+    let response = createKeyToTypesObject(arr);
 
-    isPossible = response.isPossible;
+    let isPossible = response.isPossible;
 
     if (!isPossible)
         return response.data;
-
+    
     const key_types = response.data;
 
-    let string = "class ExampleSerializer:\n";
+    let string = "from rest_framework import serializers\n\nclass ExampleSerializer(serializers.Serializer):\n";
 
     for (const key in key_types) {
 
-        required = key_types[key].required;
-        nullable = key_types[key].nullable;
-        field_type = typeof ("abc");
+        let required = key_types[key].required;
+        let nullable = key_types[key].nullable;
+        let field_type = typeof ("abc");
 
         if (key_types[key].type === typeof (true)) {
 
@@ -130,3 +130,5 @@ function parseJSONToDRF(arr) {
     return string
 
 }
+
+export default parseJSONToDRF;
